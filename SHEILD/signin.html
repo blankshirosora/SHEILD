@@ -1,0 +1,53 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SignUp</title>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+</head>
+	<script>  
+function matchPassword() {  
+  var pw1 = document.getElementById("pswd1");  
+  var pw2 = document.getElementById("pswd2");  
+  if(pw1 != pw2)  
+  {   
+    alert("Passwords did not match");  
+  } else {  
+    alert("Password created successfully");  
+  }  
+}  
+</script>  
+<body>
+	<div class="box">
+		<div class="form">
+		<h2>Sign Up</h2> 
+		<div class="inputBox">
+			<input type="email" required="required">
+			<span>Email Id</span>
+			<i></i>
+		</div>
+			<div class="inputBox">
+			<input type="text" required="required">
+			<span>Name</span>
+			<i></i>
+		</div>
+			<div class="inputBox">
+			<input type="text" required="required">
+			<span>Username</span>
+			<i></i>
+		</div>
+		<div class="inputBox">
+			<input type="password" required="required" name="pswd1">
+			<span>Password</span>
+			<i></i>
+		</div>
+			<div class="inputBox">
+			<input type="password" required="required" name="pswd2">
+			<span>Confirm Password</span>
+			<i></i>
+		</div>
+		<input type="submit" value="Login">
+		</div>
+	</div>
+</body>
+</html>
